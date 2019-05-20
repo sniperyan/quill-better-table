@@ -89,7 +89,7 @@ class BetterTable extends Module {
 
       if (this.tableSelection.selectedTds.length <= 0 ||
         !isTargetCellSelected) {
-        this.tableSelection.setSelection(
+          cellNode && cellNode.getBoundingClientRect && this.tableSelection.setSelection(
           cellNode.getBoundingClientRect(),
           cellNode.getBoundingClientRect()
         )
